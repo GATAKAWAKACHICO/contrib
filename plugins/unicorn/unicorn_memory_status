@@ -15,7 +15,7 @@ module Munin
     attr_reader :pid_file
 
     def initialize(rails_root)
-      @pid_file = "#{rails_root}/tmp/pids/unicorn.pid"
+      @pid_file = "#{rails_root}/log/pids/unicorn.pid"
     end
 
     def master_pid
